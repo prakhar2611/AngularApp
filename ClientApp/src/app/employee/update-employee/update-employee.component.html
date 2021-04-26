@@ -1,0 +1,28 @@
+
+
+<div>
+  <h1>New Employee </h1>
+  <form [formGroup]="employeeform" (ngSubmit)="save()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" formControlName="name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>Gender</label>
+      <input type="text" formControlName="gender" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>City</label>
+      <input type="text" formControlName="city" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label>Department</label>
+      <input type="text" formControlName="department" class="form-control" />
+    </div>
+    <button type="submit">save</button>
+    <button class="btn" (click)="cancel()">Cancel</button>
+  </form>
+</div>
